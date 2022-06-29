@@ -1,0 +1,112 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/mixins" as *;
+
+html {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 0.9375rem;
+  line-height: 1.220625rem;
+  font-weight: 400;
+  letter-spacing: 0.0001rem;
+
+  @include breakpoint-up(large) {
+    font-size: 1.125rem;
+    line-height: 1.465rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.953125rem;
+  font-weight: 700;
+
+  @include breakpoint-up(large) {
+    font-size: 2rem;
+    line-height: 2.60375rem;
+  }
+}
+
+h3 {
+  font-size: 0.9375rem;
+  line-height: 1.220625rem;
+  font-weight: 400;
+  color: $mediumBrown;
+
+  @include breakpoint-up(large) {
+    font-size: 1.125rem;
+    line-height: 1.465rem;
+  }
+}
+
+h4 {
+  font-size: 0.9375rem;
+  line-height: 1.220625rem;
+  font-weight: 400;
+  color: $mediumBrown;
+
+  @include breakpoint-up(large) {
+    font-size: 1.125rem;
+    line-height: 1.465rem;
+  }
+}
+
+p {
+  font-size: 0.75rem;
+  line-height: 0.97625rem;
+  font-weight: 400;
+
+  @include breakpoint-up(large) {
+    font-size: 0.9375rem;
+    line-height: 1.220625rem;
+  }
+
+  &.balance-total {
+    font-size: 1.5rem;
+    line-height: 1.953125rem;
+    letter-spacing: 0.0375rem;
+
+    @include breakpoint-up(large) {
+      font-size: 2rem;
+      line-height: 2.60375rem;
+    }
+  }
+
+  &.monthly-total {
+    font-size: 1.875rem;
+    line-height: 2.44125rem;
+    font-weight: 700;
+
+    @include breakpoint-up(large) {
+      font-size: 3rem;
+      line-height: 3.90625rem;
+    }
+  }
+
+  &.percent-change {
+    font-size: 0.9375rem;
+    line-height: 1.220625rem;
+    font-weight: 700;
+
+    @include breakpoint-up(large) {
+      font-size: 1.125rem;
+      line-height: 1.465rem;
+    }
+  }
+
+  &.daily-total {
+    font-size: 0.9375rem;
+    line-height: 1.220625rem;
+    letter-spacing: 0.0375rem;
+    font-weight: 400;
+    
+
+    @include breakpoint-up(large) {
+      font-size: 1.125rem;
+      line-height: 1.465rem;
+      
+    }
+  } 
+}
+

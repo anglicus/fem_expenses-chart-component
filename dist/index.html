@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%);}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <section class="balance">
+      <h1 class="balance__heading">My balance</h1>
+      <p class="balance__amount balance-total">$921.48</p>
+      <img class="balance__logo" src="./assets/logo.svg">
+    </section>
+    <section class="spending">
+      
+          <h2 class="spending__heading">Spending - Last 7 days</h2>
+          <p class="spending__error-message">Sorry, the data could not be loaded.<br>Please try again later.</p>
+          <div class="spending__graph-div">
+              <div class="spending__graph-section">
+                <p class="spending__graph-amount-label daily-total"></p>
+                <div class="spending__graph-bar"></div>    
+                <p class="spending__day-label"></p>
+              </div>
+              <div class="spending__graph-section">
+                <p class="spending__graph-amount-label daily-total"></p>
+                <div class="spending__graph-bar"></div>    
+                <p class="spending__day-label"></p>
+              </div>
+              <div class="spending__graph-section">
+                <p class="spending__graph-amount-label daily-total"></p>
+                <div class="spending__graph-bar"></div>    
+                <p class="spending__day-label"></p>
+              </div>
+              <div class="spending__graph-section">
+                <p class="spending__graph-amount-label daily-total"></p>
+                <div class="spending__graph-bar"></div>    
+                <p class="spending__day-label"></p>
+              </div>
+              <div class="spending__graph-section">
+                <p class="spending__graph-amount-label daily-total"></p>
+                <div class="spending__graph-bar"></div>    
+                <p class="spending__day-label"></p>
+              </div>
+              <div class="spending__graph-section">
+                <p class="spending__graph-amount-label daily-total"></p>
+                <div class="spending__graph-bar"></div>    
+                <p class="spending__day-label"></p>
+              </div>
+              <div class="spending__graph-section">
+                <p class="spending__graph-amount-label daily-total"></p>
+                <div class="spending__graph-bar"></div>    
+                <p class="spending__day-label"></p>
+              </div>
+          </div>
+          <hr class="spending__divider">
+          <div class="spending__total-div">
+            <div class="spending__total-amount-div">
+              <h3 class="spending__total-heading">Total this month</h3>
+              <p class="spending__total-heading monthly-total">$478.33</p>
+            </div>
+            <div class="spending__percent-change-div">
+              <p class="spending__change percent-change">+2.4%</p>
+              <h4 class="spending__change-heading">from last month</h4>
+            </div>
+          </div>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/anglicus">James English</a>.
+  </div>
+</body>
+<script src="js/index.js"></script>
+</html>
